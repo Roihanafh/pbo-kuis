@@ -15,5 +15,6 @@ public class Video extends Konten {
         System.out.println("Deskripsi: " + this.deskripsi);
         System.out.println("Durasi: " + this.durasi);
         System.out.println("Resolusi: " + this.resolusi);
+        System.out.println("-----------------------------------");
     }
 }

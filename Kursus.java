@@ -4,8 +4,11 @@ public class Kursus {
     private String deskripsi;
     private int durasi;
     private int harga;
-    private Konten konten[] = new Konten[5];
+    private Kuis kuis[] = new Kuis[2];
+    private Video video[] = new Video[10];
+    private Artikel artikel[] = new Artikel[5];
     private Peserta peserta [] = new Peserta[2];
+    protected Instruktur instruktur[] = new Instruktur[5];
 
     public Kursus(String idKursus, String namaKursus, String deskripsi, int durasi, int harga) {
         this.idKursus = idKursus;
@@ -27,12 +30,31 @@ public class Kursus {
         System.out.println("-----------------------------------");
         System.out.println("Konten");
         System.out.println("-----------------------------------");
-        for (int index = 0; index < this.konten.length; index++) {
-            if (konten[0]==null) {
-                System.out.println("Belum ada konten yang terdaftar pada kursus ini");
+        System.out.println("Kuis :");
+        for (int index = 0; index < this.kuis.length; index++) {
+            if (kuis[0]==null) {
+                System.out.println("Belum ada kuis yang terdaftar pada kursus ini");
                 break;
-            }else if (konten[index]!=null) {
-                System.out.println(index+1+ " " + konten[index].getJudul());
+            }else if (kuis[index]!=null) {
+                kuis[index].tampilkanKonten();
+            }
+        }
+        System.out.println("Video :");
+        for (int index = 0; index < this.video.length; index++) {
+            if (video[0]==null) {
+                System.out.println("Belum ada video yang terdaftar pada kursus ini");
+                break;
+            }else if (video[index]!=null) {
+                video[index].tampilkanKonten();
+            }
+        }
+        System.out.println("Artikel :");
+        for (int index = 0; index < this.artikel.length; index++) {
+            if (artikel[0]==null) {
+                System.out.println("Belum ada artikel yang terdaftar pada kursus ini");
+                break;
+            }else if (artikel[index]!=null) {
+                artikel[index].tampilkanKonten();
             }
         }
         System.out.println("-----------------------------------");
@@ -47,19 +69,52 @@ public class Kursus {
             }
         }
         System.out.println("===================================");
+        System.out.println();
+        System.out.println();
     }
 
-    public void tambahKonten(Konten konten) {
-        for (int index = 0; index < this.konten.length; index++) {
-            if (this.konten[index]!=null) {
-                if (this.konten.length-1==index) {
-                    System.out.println("Maaf jumlah konten sudah pada batas maksimal!");
+    public void tambahVideo(Video video) {
+        for (int index = 0; index < this.video.length; index++) {
+            if (this.video[index]!=null) {
+                if (this.video.length-1==index) {
+                    System.out.println("Maaf jumlah video sudah pada batas maksimal!");
                 }else{
                     continue;
                 }
             }else{
-                this.konten[index] = konten;
-                System.out.println("Konten berhasil dimasukkan");
+                this.video[index] = video;
+                System.out.println("video berhasil dimasukkan");
+                break;
+            }
+        }
+    }
+    public void tambahArtikel(Artikel artikel) {
+        for (int index = 0; index < this.artikel.length; index++) {
+            if (this.artikel[index]!=null) {
+                if (this.artikel.length-1==index) {
+                    System.out.println("Maaf jumlah artikel sudah pada batas maksimal!");
+                }else{
+                    continue;
+                }
+            }else{
+                this.artikel[index] = artikel;
+                System.out.println("artikel berhasil dimasukkan");
+                break;
+            }
+        }
+    }
+
+    public void tambahKuis(Kuis kuis) {
+        for (int index = 0; index < this.kuis.length; index++) {
+            if (this.kuis[index]!=null) {
+                if (this.kuis.length-1==index) {
+                    System.out.println("Maaf jumlah kuis sudah pada batas maksimal!");
+                }else{
+                    continue;
+                }
+            }else{
+                this.kuis[index] = kuis;
+                System.out.println("kuis berhasil dimasukkan");
                 break;
             }
         }
@@ -76,6 +131,22 @@ public class Kursus {
             }else{
                 this.peserta[index] = peserta;
                 System.out.println("peserta berhasil dimasukkan");
+                break;
+            }
+        }
+    }
+   
+    public void tambahkanInstruktur(Instruktur instruktur){
+        for (int index = 0; index < this.instruktur.length; index++) {
+            if (this.instruktur[index]!=null) {
+                if (this.instruktur.length==index) {
+                    System.out.println("Maaf jumlah instruktur sudah pada batas maksimal!");
+                }else{
+                    continue;
+                }
+            }else{
+                this.instruktur[index] = instruktur;
+                System.out.println("instruktur berhasil dimasukkan");
                 break;
             }
         }

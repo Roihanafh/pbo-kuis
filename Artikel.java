@@ -2,8 +2,8 @@ public class Artikel extends Konten {
     private String penulis;
     private String sumber;
 
-    public Artikel(String idKonten, String jenisKonten, String sumber, String deskripsi, String penulis) {
-        super(idKonten,jenisKonten, sumber, deskripsi);
+    public Artikel(String idKonten, String jenisKonten, String deskripsi, String judul, String penulis, String sumber) {
+        super(idKonten,jenisKonten, judul, deskripsi);
         this.penulis = penulis;
         this.sumber = sumber;
     }
@@ -15,5 +15,6 @@ public class Artikel extends Konten {
         System.out.println("Deskripsi: " + this.deskripsi);
         System.out.println("Penulis: " + this.penulis);
         System.out.println("Sumber: " + this.sumber);
+        System.out.println("-----------------------------------");
     }
 }
