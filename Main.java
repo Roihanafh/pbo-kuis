@@ -44,6 +44,8 @@ public class Main {
 
         //mencoba mengubah value dari durasi pada kursus javascript menggunakan method set get
         System.out.println("=========================================");
+        System.out.println("Ubah durasi pada kursus javascript");
+        System.out.println("=========================================");
         System.out.println("Durasi kursusjavascript sebelum diubah: " + javascript.getDurasi());
         javascript.setDurasi(5);
         System.out.println("Durasi kursus javascript setelah diubah: " + javascript.getDurasi());
