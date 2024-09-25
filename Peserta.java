@@ -4,6 +4,7 @@ class Peserta {
     protected String email;
     protected String nomorTelepon;
     protected Status status;
+    protected Pembayaran pembayaran[]=new Pembayaran[10];
 
     // Constructor untuk Peserta
     public Peserta(String idPeserta, String nama, String email, String nomorTelepon) {
@@ -37,6 +38,14 @@ class Peserta {
     // Method untuk membayar kursus
     public void bayarKursus(Pembayaran pembayaran) {
         System.out.println(nama + " telah melakukan pembayaran.");
+        for (int i = 0; i < this.pembayaran.length; i++) {
+            if (this.pembayaran[i] == null) {
+                this.pembayaran[i] = pembayaran;
+                break;      
+            }else if (this.pembayaran[i] != null) {
+                continue;
+            }
+        }
         pembayaran.tampilkanDataPembayaran();  // Menampilkan detail pembayaran
     }
     

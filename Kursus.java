@@ -24,6 +24,9 @@ public class Kursus {
     public int getDurasi() {
         return durasi;
     }
+    public String getNama(){
+        return namaKursus;
+    }
 
     public void tampilkanDetailKursus() {
         System.out.println("===================================");
