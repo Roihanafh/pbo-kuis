@@ -5,7 +5,6 @@ class Peserta {
     protected String nomorTelepon;
     protected Status status;
 
-
     // Constructor untuk Peserta
     public Peserta(String idPeserta, String nama, String email, String nomorTelepon) {
         this.idPeserta = idPeserta;
@@ -34,7 +33,7 @@ class Peserta {
     public void setStatus(Status status) {
         this.status = status;
     }
-    
+
     // Method untuk membayar kursus
     public void bayarKursus(Pembayaran pembayaran) {
         System.out.println(nama + " telah melakukan pembayaran.");

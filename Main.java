@@ -10,10 +10,13 @@ public class Main {
         //membuat objek video, kuis, artikel dan memasukkan pada kursus java
         Kuis kuis = new Kuis("K001", "Kuis", "Kuis java", "Kuis minggu 4", 10, 120);
         Video video = new Video("V001", "Video", "Video java", "Video penjelasan", 10, "720p");
-        Artikel artikel = new Artikel("A001", "Artikel","Menjelaskan seputar class dan object pada pemrograman java", "Class dan Object", "Wahyu","Jurnal pendidikan");
+        Artikel artikel = new Artikel("A001", "Artikel","Menjelaskan seputar class dan object pada pemrograman java", "Class dan Object", "Ayu","Jurnal pendidikan");
         java.tambahArtikel(artikel);
         java.tambahVideo(video);
         java.tambahKuis(kuis);
+        //membuat objek instruktur dan memasukkan pada kursus java
+        Instruktur instruktur = new Instruktur("I001", "Ayu", "Pemrograman", "ayu@gmail.com");
+        java.tambahkanInstruktur(instruktur);
         //membuat objek peserta dan memasukkan pada kursus java
         Peserta peserta = new Peserta("P001", "Alfin", "Alfin1234@example.com", "085123456789");
         Peserta peserta2 = new Peserta("P002", "Budi", "Budi1234@example.com", "085123418299");

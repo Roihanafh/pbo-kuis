@@ -35,6 +35,18 @@ public class Kursus {
         System.out.println("Durasi: " + this.durasi);
         System.out.println("Harga: " + this.harga);
         System.out.println("-----------------------------------");
+        System.out.println("Instruktur");
+        System.out.println("-----------------------------------");
+        for (int index = 0; index < this.instruktur.length; index++) {
+            if (instruktur[0]==null) {
+                System.out.println("Belum ada instruktur yang terdaftar pada kursus ini");
+                break;
+            }else if (instruktur[index]!=null) {
+                instruktur[index].tampilkanProfil();
+            }
+        }
+        System.out.println("-----------------------------------");
+
         System.out.println("Konten");
         System.out.println("-----------------------------------");
         System.out.println("Kuis :");
