@@ -34,9 +34,9 @@ public class Main {
         javascript.tampilkanDetailKursus();
         //mencoba mengubah value dari durasi pada kursus javascript menggunakan method set get
         System.out.println("=========================================");
-        System.out.println("Durasi javascript sebelum diubah: " + javascript.getDurasi());
+        System.out.println("Durasi kursusjavascript sebelum diubah: " + javascript.getDurasi());
         javascript.setDurasi(5);
-        System.out.println("Durasi javascript setelah diubah: " + javascript.getDurasi());
+        System.out.println("Durasi kursus javascript setelah diubah: " + javascript.getDurasi());
         System.out.println("=========================================");
         
     }
