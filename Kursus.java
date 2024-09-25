@@ -16,7 +16,7 @@ public class Kursus {
         this.deskripsi = deskripsi;
         this.durasi = durasi;
         this.harga = harga;
-    }
+    } 
 
     public void setDurasi(int durasi) {
         this.durasi = durasi;
@@ -26,6 +26,12 @@ public class Kursus {
     }
     public String getNama(){
         return namaKursus;
+    }
+    public Kursus getKursus(){
+        return this;
+    }
+    public int getHarga(){
+        return harga;
     }
 
     public void tampilkanDetailKursus() {

@@ -37,10 +37,11 @@ class Peserta {
 
     // Method untuk membayar kursus
     public void bayarKursus(Pembayaran pembayaran) {
-        System.out.println(nama + " telah melakukan pembayaran.");
+        System.out.println(nama + " telah melakukan pembayaran pada kursus"+pembayaran.getKursus().getNama());
         for (int i = 0; i < this.pembayaran.length; i++) {
             if (this.pembayaran[i] == null) {
                 this.pembayaran[i] = pembayaran;
+                System.out.println("Pembayaran berhasil!");
                 break;      
             }else if (this.pembayaran[i] != null) {
                 continue;

@@ -1,3 +1,4 @@
+import java.util.Date;
 public class Main {
     public static void main(String[] args) {
         System.out.println("===========================================");
@@ -37,6 +38,11 @@ public class Main {
         System.out.println("Durasi kursusjavascript sebelum diubah: " + javascript.getDurasi());
         javascript.setDurasi(5);
         System.out.println("Durasi kursus javascript setelah diubah: " + javascript.getDurasi());
+        System.out.println("=========================================");
+        //peserta 1 melakukan pembayaran untuk kursus java
+        Date tglPembayaran = new Date();
+        Pembayaran pembayaran = new Pembayaran("P001", "Transfer", tglPembayaran, java);
+        peserta.bayarKursus(pembayaran);
         System.out.println("=========================================");
         
     }
