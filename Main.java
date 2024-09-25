@@ -4,6 +4,7 @@ public class Main {
         System.out.println("===========================================");
         System.out.println("Selamat Datang di Aplikasi Kursus Online!");
         System.out.println("===========================================");
+        System.out.println();
 
         //menambahkan beberapa kursus
         Kursus javascript = new Kursus("JS001", "Javascript Fundamental", "Javascript Fundamental", 3, 100000);
@@ -32,11 +33,13 @@ public class Main {
         java.tambahPeserta(peserta3);//kondisi penambahan saat kelas sudah penuh
 
         //menampilkan detail kursus java yang telah diisi dengan konten dan peserta, serta kursus javascript yang masih kosong
+        System.out.println();
         System.out.println("=========================================");
         System.out.println("Kursus yang memiliki value(peserta dan konten sudah diisikan)");
         java.tampilkanDetailKursus();
-        System.out.println("Kursus yang kosong(peserta dan konten belum dimasukkan)");
+        System.out.println();
         System.out.println("=========================================");
+        System.out.println("Kursus yang kosong(peserta dan konten belum dimasukkan)");
         javascript.tampilkanDetailKursus();
 
         //mencoba mengubah value dari durasi pada kursus javascript menggunakan method set get
@@ -48,9 +51,11 @@ public class Main {
 
         //peserta 1 mendaftar pada kursus java
         peserta.daftarKursus(java);
-        System.out.println("---------------------------------------");
         
         //peserta 1 melakukan pembayaran untuk kursus java
+        System.out.println("=========================================");
+        System.out.println("Pembayaran");
+        System.out.println("=========================================");
         Date tglPembayaran = new Date();
         Pembayaran pembayaran = new Pembayaran("P001", "Transfer", tglPembayaran, java);
         peserta.bayarKursus(pembayaran);

@@ -17,9 +17,4 @@ public class Instruktur {
         System.out.println("Spesialisasi: " + spesialisasi);
         System.out.println("Email: " + email);
     }
-
-    public void buatKonten(Konten konten) {
-        System.out.println(nama + " membuat konten baru.");
-        konten.tampilkanKonten();
-    }
 }     
