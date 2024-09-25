@@ -29,5 +29,12 @@ public class Main {
         System.out.println("Kursus yang kosong(peserta dan konten belum dimasukkan)");
         System.out.println("=========================================");
         javascript.tampilkanDetailKursus();
+        //mencoba mengubah value dari durasi pada kursus javascript menggunakan method set get
+        System.out.println("=========================================");
+        System.out.println("Durasi javascript sebelum diubah: " + javascript.getDurasi());
+        javascript.setDurasi(5);
+        System.out.println("Durasi javascript setelah diubah: " + javascript.getDurasi());
+        System.out.println("=========================================");
+        
     }
 }

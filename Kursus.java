@@ -151,4 +151,10 @@ public class Kursus {
             }
         }
     }
+    public void setDurasi(int durasi) {
+        this.durasi = durasi;
+    }
+    public int getDurasi() {
+        return durasi;
+    }
 }
