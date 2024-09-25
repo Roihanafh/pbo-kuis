@@ -1,10 +1,9 @@
 class Peserta {
-    protected String idPeserta;
-    protected String nama;
-    protected String email;
-    protected String nomorTelepon;
-    protected Status status;
-    protected Pembayaran pembayaran[]=new Pembayaran[10];
+    private String idPeserta;
+    private String nama;
+    private String email;
+    private String nomorTelepon;
+    private Pembayaran pembayaran[]=new Pembayaran[10];
 
     // Constructor untuk Peserta
     public Peserta(String idPeserta, String nama, String email, String nomorTelepon) {
@@ -29,10 +28,6 @@ class Peserta {
 
     public String getNomorTelepon() {
         return nomorTelepon;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
     }
 
     // Method untuk membayar kursus
