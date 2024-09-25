@@ -39,6 +39,9 @@ public class Main {
         javascript.setDurasi(5);
         System.out.println("Durasi kursus javascript setelah diubah: " + javascript.getDurasi());
         System.out.println("=========================================");
+        //peserta 1 mendaftar pada kursus java
+        peserta.daftarKursus(java);
+        System.out.println("---------------------------------------");
         //peserta 1 melakukan pembayaran untuk kursus java
         Date tglPembayaran = new Date();
         Pembayaran pembayaran = new Pembayaran("P001", "Transfer", tglPembayaran, java);
