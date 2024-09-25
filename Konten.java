@@ -15,14 +15,14 @@ public class Konten{
         this.judul = judul;
         this.deskripsi = deskripsi;
     }
+    public String getJudul(){
+        return judul;
+    }
 
     public void tampilkanKonten(){
         System.out.println("ID Konten: " + idKonten);
         System.out.println("Jenis Konten: " + jenisKonten);
         System.out.println("Judul: " + judul);
         System.out.println("Deskripsi: " + deskripsi);
-    }
-    public String getJudul(){
-        return judul;
     }
 }

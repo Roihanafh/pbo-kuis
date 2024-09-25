@@ -8,7 +8,7 @@ public class Kursus {
     private Video video[] = new Video[10];
     private Artikel artikel[] = new Artikel[5];
     private Peserta peserta [] = new Peserta[2];
-    protected Instruktur instruktur[] = new Instruktur[5];
+    private Instruktur instruktur[] = new Instruktur[5];
 
     public Kursus(String idKursus, String namaKursus, String deskripsi, int durasi, int harga) {
         this.idKursus = idKursus;
@@ -16,6 +16,13 @@ public class Kursus {
         this.deskripsi = deskripsi;
         this.durasi = durasi;
         this.harga = harga;
+    }
+
+    public void setDurasi(int durasi) {
+        this.durasi = durasi;
+    }
+    public int getDurasi() {
+        return durasi;
     }
 
     public void tampilkanDetailKursus() {
@@ -150,11 +157,5 @@ public class Kursus {
                 break;
             }
         }
-    }
-    public void setDurasi(int durasi) {
-        this.durasi = durasi;
-    }
-    public int getDurasi() {
-        return durasi;
     }
 }

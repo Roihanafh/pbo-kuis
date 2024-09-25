@@ -13,13 +13,7 @@ class Peserta {
         this.email = email;
         this.nomorTelepon = nomorTelepon;
     }
-
-    // Method untuk membayar kursus
-    public void bayarKursus(Pembayaran pembayaran) {
-        System.out.println(nama + " telah melakukan pembayaran.");
-        pembayaran.tampilkanDataPembayaran();  // Menampilkan detail pembayaran
-    }
-
+    
     // Getters untuk semua atribut
     public String getIdPeserta() {
         return idPeserta;
@@ -40,4 +34,11 @@ class Peserta {
     public void setStatus(Status status) {
         this.status = status;
     }
+    
+    // Method untuk membayar kursus
+    public void bayarKursus(Pembayaran pembayaran) {
+        System.out.println(nama + " telah melakukan pembayaran.");
+        pembayaran.tampilkanDataPembayaran();  // Menampilkan detail pembayaran
+    }
+    
 }
