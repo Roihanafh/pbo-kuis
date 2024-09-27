@@ -32,7 +32,6 @@ class Peserta {
     public String getNomorTelepon() {
         return nomorTelepon;
     }
-
     //method untuk daftar kursus
     public void daftarKursus(Kursus kursus) {
         for (int i = 0; i < this.kursus.length; i++) {

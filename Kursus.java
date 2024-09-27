@@ -45,6 +45,14 @@ public class Kursus {
         return peserta.length;
     }
 
+    public void tampilkanPeserta(){
+        for (int index = 0; index < this.peserta.length; index++) {
+            if (this.peserta[index]!=null) {
+                System.out.println("Peserta "+(index+1)+" : "+this.peserta[index].getNama());
+            }
+        }
+    }
+
     public void tampilkanDetailKursus() {
         System.out.println("===================================");
         System.out.println("Detail Kursus");

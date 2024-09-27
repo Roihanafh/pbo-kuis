@@ -75,6 +75,8 @@ public class Main {
         //menambahkan peserta 3 ke dalam kelas java
         Peserta peserta4 = new Peserta( "Caca", "Caca1234@example.com", "091280128012");
         java.tambahPeserta(peserta4);
+        java.tampilkanPeserta();
+        
         
     }
 }
