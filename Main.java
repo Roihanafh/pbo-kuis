@@ -24,9 +24,9 @@ public class Main {
         java.tambahkanInstruktur(instruktur);
 
         //membuat objek peserta dan memasukkan pada kursus java
-        Peserta peserta = new Peserta("P001", "Alfin", "Alfin1234@example.com", "085123456789");
-        Peserta peserta2 = new Peserta("P002", "Budi", "Budi1234@example.com", "085123418299");
-        Peserta peserta3 = new Peserta("P003", "Asta", "Asta1234@example.com", "091280128012");
+        Peserta peserta = new Peserta( "Alfin", "Alfin1234@example.com", "085123456789");
+        Peserta peserta2 = new Peserta( "Budi", "Budi1234@example.com", "085123418299");
+        Peserta peserta3 = new Peserta( "Asta", "Asta1234@example.com", "091280128012");
         java.tambahPeserta(peserta);
         java.tambahPeserta(peserta2);
         System.out.println("---saat kelas sudah penuh---");
@@ -62,6 +62,19 @@ public class Main {
         Pembayaran pembayaran = new Pembayaran("P001", "Transfer", tglPembayaran, java);
         peserta.bayarKursus(pembayaran);
         System.out.println("=========================================");
+        System.out.println("Challange 1");
+        System.out.println("=========================================");
+        System.out.print("Id peserta 1: "+peserta.getIdPeserta()+"\n");
+        System.out.print("Id peserta 2: "+peserta2.getIdPeserta()+"\n");
+        System.out.println("=========================================");
+        System.out.println("Challange 2");
+        System.out.println("=========================================");
+        //Menambahkan maks peserta
+        java.setJumlahPeserta(5);
+        System.out.println("Maksimal peserta: "+java.getJumlahPeserta());
+        //menambahkan peserta 3 ke dalam kelas java
+        Peserta peserta4 = new Peserta( "Caca", "Caca1234@example.com", "091280128012");
+        java.tambahPeserta(peserta4);
         
     }
 }

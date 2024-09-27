@@ -33,6 +33,17 @@ public class Kursus {
     public int getHarga(){
         return harga;
     }
+    public void setJumlahPeserta(int jumlah){
+        Peserta temPeserta []= new Peserta[peserta.length];
+        temPeserta = peserta;
+        peserta = new Peserta[jumlah];
+        for (int index = 0; index < temPeserta.length; index++) {
+            peserta[index] = temPeserta[index];
+        }
+    }
+    public int getJumlahPeserta(){
+        return peserta.length;
+    }
 
     public void tampilkanDetailKursus() {
         System.out.println("===================================");

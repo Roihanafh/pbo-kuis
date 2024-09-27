@@ -1,4 +1,5 @@
 class Peserta {
+    private static int counter=0;
     private String idPeserta;
     private String nama;
     private String email;
@@ -7,8 +8,9 @@ class Peserta {
     private Kursus kursus[]=new Kursus[10];
 
     // Constructor untuk Peserta
-    public Peserta(String idPeserta, String nama, String email, String nomorTelepon) {
-        this.idPeserta = idPeserta;
+    public Peserta( String nama, String email, String nomorTelepon) {
+        counter++;
+        this.idPeserta = "PST"+counter;
         this.nama = nama;
         this.email = email;
         this.nomorTelepon = nomorTelepon;
